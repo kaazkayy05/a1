@@ -57,7 +57,7 @@ document.write("<tr><th>x</th><th>op</th><th>y</th><th>result</th></tr>");
 document.write(tableRows);
 document.write("</table>");
 
-//calculator logic being handled
+//calculator logic being handled, summary table
 if (validResults.length > 0) {
     let min = validResults[0];
     let max = validResults[0];
@@ -75,7 +75,7 @@ if (validResults.length > 0) {
     
     let avg = total / validResults.length;
 
-    //more style for caluclator
+    //more style for caluclator, summary table
     document.write("<table>");
     document.write("<tr><th>Min</th><th>Max</th><th>Average</th><th>Total</th></tr>");
     document.write("<tr><td>" + min + "</td><td>" + max + "</td><td>" + avg + "</td><td>" + total + "</td></tr>");
