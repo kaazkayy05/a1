@@ -14,7 +14,7 @@ while (true) {
     let inputX = prompt("Enter first number:");
     if (inputX === null) break;
     
-    let operator = prompt("Enter operator (+, -, *, /, %):");
+    let operator = prompt("Enter an operator:");
     if (operator === null) break;
     
     let inputY = prompt("Enter second number:");
@@ -26,7 +26,7 @@ while (true) {
 
     // handles the logic for incorrect calculator input
     if (isNaN(x) || isNaN(y)) {
-        result = "wrong input number";
+        result = "Wrong number input!";
     } else {
         if (operator === "+") {
             result = x + y;
@@ -44,7 +44,7 @@ while (true) {
             result = x % y;
             validResults.push(result);
         } else {
-            result = "computation error";
+            result = "Computation Error!";
         }
     }
     // the table construction
