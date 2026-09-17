@@ -8,3 +8,13 @@ document.write("th { background-color: orange; font-weight: bold; }");
 document.write("td { background-color: #fdf6e3; }");
 document.write("</style>");
 
+while (true) {
+    let inputX = prompt("Enter first number:");
+    if (inputX === null) {
+        break;
+    }
+
+    let op = prompt("Enter operator (+, -, *, /, %):");
+    if (op === null) {
+        break;
+    }
