@@ -56,3 +56,28 @@ document.write("<table>");
 document.write("<tr><th>x</th><th>op</th><th>y</th><th>result</th></tr>");
 document.write(tableRows);
 document.write("</table>");
+
+//calculator logic being handled
+if (validResults.length > 0) {
+    let min = validResults[0];
+    let max = validResults[0];
+    let total = 0;
+    
+    for (let i = 0; i < validResults.length; i++) {
+        if (validResults[i] < min) {
+            min = validResults[i];
+        }
+        if (validResults[i] > max) {
+            max = validResults[i];
+        }
+        total = total + validResults[i];
+    }
+    
+    let avg = total / validResults.length;
+
+    //more style for caluclator
+    document.write("<table>");
+    document.write("<tr><th>Min</th><th>Max</th><th>Average</th><th>Total</th></tr>");
+    document.write("<tr><td>" + min + "</td><td>" + max + "</td><td>" + avg + "</td><td>" + total + "</td></tr>");
+    document.write("</table>");
+}
